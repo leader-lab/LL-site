@@ -6,13 +6,13 @@ import lit from "@astrojs/lit";
 
 // https://astro.build/config
 export default defineConfig({
-//    site: 'https://leader-lab.github.io',
-//    base: '/LL-site',
-  integrations: [sitemap(), mdx(), image(), lit()], // Add renderers to the config
-  // This is for the astro-icon package. You can find more about the package here: https://www.npmjs.com/package/astro-icon
-  vite: {
-    ssr: {
-      external: ["svgo"],
+    site: 'https://leader-lab.github.io',
+    base: '/LL-site',
+    integrations: [sitemap(), mdx(), image(), lit()], // Add renderers to the config
+    // This is for the astro-icon package. You can find more about the package here: https://www.npmjs.com/package/astro-icon
+    vite: {
+        ssr: {
+          external: ["svgo"],
+        },
     },
-  },
 });
