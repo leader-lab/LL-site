@@ -55,6 +55,11 @@ picture {
 	display: block;
 }
 
+video {
+    overflow: auto;
+    object-fit: cover;
+}
+
 /* Inherit fonts for inputs and buttons */
 input,
 button,
