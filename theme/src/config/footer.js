@@ -4,11 +4,11 @@ export const footerSocials = [
     url: 'https://instagram.com/leaderlabsverige',
     icon: "mdi:instagram",
   },
-  {
-    name: 'Youtube',
-    url: 'https://youtube.com/c/LittleSticks',
-    icon: "mdi:youtube",
-  },
+//  {
+//    name: 'Youtube',
+//    url: 'https://youtube.com/c/LittleSticks',
+//    icon: "mdi:youtube",
+//  },
   {
     name: 'LinkedIn',
     url: 'https://se.linkedin.com/company/leaderlabse',

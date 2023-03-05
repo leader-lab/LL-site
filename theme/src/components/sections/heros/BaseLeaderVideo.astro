@@ -5,7 +5,7 @@ import settings from '../../../config/settings.js';
 <section>
     <div class="base-video">
         <video autoplay muted loop class="leader-lab-video">
-          <source src="assets/videos/LeaderLabAdecco-Event.mp4" type="video/mp4">
+          <source rel="preload" src="assets/videos/LeaderLabAdecco-Event.mp4" type="video/mp4">
         </video>
         <h2 class="content">För framtidens ledare</h2>
     </div>
@@ -18,8 +18,9 @@ import settings from '../../../config/settings.js';
     }
 
     .content {
-      top: 50%;
       left: 50%;
+      top: 50%;
+      transform: translate(-50%,-50%);
       position: absolute;
       background: rgba(0, 0, 0, 0.5);
       color: #f1f1f1;
