@@ -17,3 +17,11 @@ pre {
 pre .language-id {
   display: none;
 }
+
+.full-view {
+    height: 100%;
+}
+
+.inherit-height {
+    height: inherit;
+}

@@ -2,10 +2,9 @@
 import { Container, Button } from '@littlesticks/odyssey-theme-components';
 import settings from '../../../config/settings.js';
 ---
-<section>
-    <div class="base-video">
-        <video autoplay muted loop class="leader-lab-video">
-          <source rel="preload" src="assets/videos/LeaderLabAdecco-Event.mp4" type="video/mp4">
+<section class="inherit-height">
+    <div class="base-video; inherit-height">
+        <video src="assets/videos/LeaderLabAdecco-Event.mp4" autoplay muted loop class="leader-lab-video" rel="preload"  type="video/mp4">
         </video>
         <h2 class="content">För framtidens ledare</h2>
     </div>
@@ -13,8 +12,14 @@ import settings from '../../../config/settings.js';
 
 <style>
     .leader-lab-video {
-        min-width: 100%;
-        min-height: 100%;
+      transform: translatez(0);
+      position: relative;
+
+      margin: auto;
+
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
 
     .content {
@@ -28,13 +33,16 @@ import settings from '../../../config/settings.js';
     }
 
     .base-video {
-        position: float;
-        right: 0;
-        bottom: 0;
-        min-width: 100%;
-        min-height: 100%;
-        z-index: -100;
-        width: 100%;
+      position: absolute;
+      margin: auto;
+      width: 100%;
+      height: 100%;
+
+      background: red;
+
+      overflow: hidden;
+      clip-path: 0 0;
+      transform: translatez(0);
     }
 
 	.hero-section__section {
